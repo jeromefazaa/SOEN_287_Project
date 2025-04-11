@@ -1,0 +1,139 @@
+/* New colorful, modern design */
+
+body {
+    background-color: #f0f8ff; /* light blue */
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    color: #333;
+}
+
+.header {
+    background: #4b79a1;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+}
+
+.header h1 {
+    margin: 0;
+    font-size: 2.5em;
+}
+
+.header img {
+    max-width: 80px;
+    height: auto;
+    display: inline-block;
+}
+
+.side_menu_content_area {
+    display: flex;
+}
+
+.side_menu {
+    background-color: #283e56;
+    color: #fff;
+    width: 250px;
+    padding: 20px;
+    box-sizing: border-box;
+    min-height: 100vh;
+}
+
+.side_menu h5 {
+    margin-bottom: 20px;
+    font-size: 1.5em;
+}
+
+.side_menu button {
+    background-color: #7191a5;
+    color: #fff;
+    border: none;
+    padding: 10px;
+    margin-bottom: 10px;
+    width: 100%;
+    text-align: left;
+    cursor: pointer;
+    border-radius: 4px;
+    font-size: 1em;
+}
+
+.side_menu button:hover {
+    background-color: #5b7a91;
+}
+
+.content_area {
+    flex: 1;
+    padding: 20px;
+    background-color: #ffffff;
+    box-sizing: border-box;
+}
+
+.content_area_title {
+    border-bottom: 2px solid #4b79a1;
+    margin-bottom: 20px;
+    padding-bottom: 10px;
+}
+
+.footer {
+    background-color: #4b79a1;
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+}
+
+form {
+    background-color: #e6f2ff;
+    border: 1px solid #a9cce3;
+    padding: 20px;
+    border-radius: 8px;
+    margin-bottom: 20px;
+}
+
+form label {
+    display: block;
+    margin: 5px 0;
+    font-weight: bold;
+}
+
+form input[type="text"],
+form input[type="password"],
+form input[type="number"],
+form select,
+form textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #a9cce3;
+    border-radius: 4px;
+    margin-bottom: 15px;
+    box-sizing: border-box;
+}
+
+form input[type="submit"],
+form input[type="reset"] {
+    background-color: #4b79a1;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-right: 10px;
+}
+
+form input[type="submit"]:hover,
+form input[type="reset"]:hover {
+    background-color: #376590;
+}
+
+.pet_item {
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    padding: 15px;
+    margin: 10px 0;
+    border-radius: 8px;
+}
+
+.pets_image {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
