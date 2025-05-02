@@ -9,7 +9,6 @@
   "keywords": [],
   "author": "",
   "license": "ISC",
-  "description": "",
   "dependencies": {
     "body-parser": "^2.2.0",
     "cors": "^2.8.5",
@@ -17,5 +16,6 @@
     "express-handlebars": "^8.0.1",
     "express-session": "^1.18.1",
     "path": "^0.12.7"
-  }
+  },
+  "description": ""
 }

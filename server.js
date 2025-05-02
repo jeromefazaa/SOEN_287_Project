@@ -6,8 +6,8 @@ const fs = require('fs');
 const app = express();
 const PORT = process.env.PORT || 3000;
 
-app.use(express.static('public'));
 app.use(cors());
+app.use(express.static('public'));
 app.use(bodyParser.json());
 
 // Setup session middleware
@@ -18,7 +18,7 @@ app.use(session({
 }));
 
 // Existing GET routes for pages
-app.get('/index.html', (req, res, next) => {
+app.get('/index1.html', (req, res, next) => {
     try {
         const data = loadContent('index.html');
         res.send(data);
@@ -360,21 +360,38 @@ function loadContent(page) {
             break;
         case 'index.html':
             title = 'Home Page';
-            body = `<div class="content_area_title">
-                <h2>Welcome To Our Pethouse</h2>
-                <p>We built this website for people looking to adopt a dog or cat.</p>
-            </div>
-            <div class="content_area_content">
-                <p>Here's what you can do:</p>
-                <dl>
-                    <dt>Find a dog/cat</dt>
-                    <dd>Search for a pet based on your criteria.</dd>
-                    <dt>Have a pet to giveaway</dt>
-                    <dd>Register your pet for adoption (requires login).</dd>
-                    <dt>Contact us</dt>
-                    <dd>Get our contact information.</dd>
-                </dl>
-            </div>`;
+            body = `
+                  <div class="content_area_title">
+                    <h2>Welcome To Our Pethouse</h2>
+                    <p>Navigate through our site to find the perfect pet or share yours with a loving home.</p>
+                  </div>
+                  <div class="content_area_content">
+                    <dl>
+                      <dt>Find a Dog/Cat</dt>
+                      <dd>Filter available pets by type, breed, age, gender, and compatibility.</dd>
+            
+                      <dt>Dog Care</dt>
+                      <dd>Explore expert tips on nutrition, exercise, grooming, and health for dogs.</dd>
+            
+                      <dt>Cat Care</dt>
+                      <dd>Find resources on feeding, litter training, grooming, and common cat health issues.</dd>
+            
+                      <dt>Create Account</dt>
+                      <dd>Sign up to save favorites and list your own pet for adoption.</dd>
+            
+                      <dt>Login</dt>
+                      <dd>Access your account to manage pet submissions and view saved pets.</dd>
+            
+                      <dt>Giveaway Your Pet</dt>
+                      <dd>Register your pet for adoption (must be logged in first).</dd>
+            
+                      <dt>Contact Us</dt>
+                      <dd>Reach out with questions, feedback, or support requests.</dd>
+            
+                      <dt>Privacy Disclaimer</dt>
+                      <dd>Learn how we protect and use your personal information.</dd>
+                    </dl>
+                  </div>`;
             break;
         case 'pet_giveaway.html':
             title = 'Giveaway A Pet';

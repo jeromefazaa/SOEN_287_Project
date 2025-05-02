@@ -137,3 +137,21 @@ form input[type="reset"]:hover {
     height: auto;
     border-radius: 8px;
 }
+.header {
+    background: #4b79a1;
+    color: #fff;
+    padding: 8px 0;       /* reduced vertical padding */
+    text-align: center;
+}
+
+.header h1 {
+    margin: 0;
+    font-size: 1.6em;     /* smaller title */
+}
+
+.header img {
+    max-width: 50px;      /* smaller logo */
+    height: auto;
+    display: inline-block;
+    vertical-align: middle;
+}

@@ -66,7 +66,8 @@ const logoutPage = document.querySelector(".logout-page");
 const contentArea = document.getElementById('content_area_section');
 
 indexPage.onclick = async () => {
-    const response = await fetch(`${apiURL}/index.html`);
+    const response = await fetch(`${apiURL}/index1.html`);
+    console.log(response);
     const data = await response.json();
     document.title = data.title;
     contentArea.innerHTML = data.body;
